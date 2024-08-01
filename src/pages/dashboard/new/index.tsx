@@ -231,7 +231,7 @@ export function New() {
                             <div className="new-form-label-input-container double">
                                 <label htmlFor="price" className='new-form-label'><p>Price</p></label>{/* */}
                                 <Input
-                                placeholder='Ex: 65,70' ////
+                                placeholder='Ex: 65.70' ////
                                 name='price'
                                 register={register}
                                 type='text'
