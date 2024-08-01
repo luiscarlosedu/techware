@@ -14,7 +14,7 @@ export default function Modal({cupom}: ModalProps) {
     const [modalInput, setModalInput] = useState('');
     const [cupomVerificado, setCupomVerificado] = useState(false);
 
-    const {setCupom, cupomInput} = useContext(CupomContext);
+    const {setCupom} = useContext(CupomContext);
 
     const toggleModal = () => {
         setModal(!modal);
