@@ -1,0 +1,19 @@
+.input-component {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 0px 8px;
+    height: 44px;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #606060 inset;
+    -webkit-text-fill-color: white;
+}
+
+.input-component-errors {
+    color: red;
+    margin: 4px 0px;
+    margin-left: 3px;
+    font-size: 14px;
+} 

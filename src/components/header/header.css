@@ -1,0 +1,94 @@
+.header-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    background-color: #850AD3;
+    filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+    margin-bottom: 16px;    
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+header {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 16px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.logo {
+    color: black;    
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo span {
+    color: white;
+}
+
+.logo-icon {
+    display: flex;
+    margin-top: 5px;
+}
+
+.header-cart {
+    background-color: #141414;
+    border: none;
+    padding: 4px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.header-login {
+    border: none;
+    border-radius: 9999px; 
+    background-color: white;
+    color: black;
+    padding: 8px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-cart-amount {
+    position: absolute;
+    left: 30px;
+    bottom: 25px;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+}

@@ -1,0 +1,106 @@
+.dashboard-h2 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.dashboard-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    color: white;
+    gap: 24px;
+}
+
+.dashboard-main-product {
+    width: 100%;
+    background-color: #202020;
+    border-radius: 8px;
+    position: relative;
+}
+
+.dashboard-main-product-trash {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+    cursor: pointer;
+}
+
+.dashboard-main-product img {
+    width: 100%;
+    height: 288px;
+    object-fit: cover;
+    transition: .3s ease;
+}
+
+.dashboard-main-product img:hover {
+    transform: scale(1.01);
+}
+
+.dashboard-main-product p {
+    font-weight: bold;
+    margin-top: 4px;
+    padding: 0px 8px;
+    margin-bottom: 8px;
+}
+
+.dashboard-main-product-content {
+    padding: 0px 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-main-product-content span {
+    margin-bottom: 10px;
+}
+
+.dashboard-main-product-content-strong {
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    align-items: center;
+}
+
+.dashboard-main-product-bar {
+    width: 100%;
+    height: 1px;
+    background: #404040;
+    margin: 8px 0px;
+}
+
+.dashboard-main-product-city {
+    padding: 0px 8px 8px 8px;
+}
+
+.dashboard-ops {
+    color: white;
+    text-align: center;
+}
+
+.dashboard-ops-link {
+    color: #850AD3;
+}
+
+
+@media screen and (min-width: 768px) {
+    .dashboard-main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .dashboard-main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

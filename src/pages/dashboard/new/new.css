@@ -1,0 +1,162 @@
+.new-file-field {
+    width: 100%;
+    background-color: #202020;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.new-file-btn {
+    width: 192px;
+    height: 128px;
+    border: 2px solid grey;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #404040;
+    border: none;
+    outline: none;
+}
+
+.new-file-btn-icon {
+    position: absolute;
+    cursor: pointer;
+}
+
+.new-file-btn-icon-children {
+    cursor: pointer;
+}
+
+.new-file-btn-input {
+    cursor: pointer;
+}
+
+.new-file-btn-input input {
+    opacity: 0;
+    cursor: pointer;
+}
+
+/*IMAGENS DA SEÇÃO NEW FILE*/
+
+.new-file-item-image-container {
+    width: 100%;
+    height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.new-file-item-image {
+    width: 100%;
+    height: 128px;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.new-file-item-image-delete {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.784);
+    border-radius: 0px 8px 0px 0px;
+    border: none;
+    color: white;
+    outline: none;
+    transition: .3s;
+}
+
+.new-file-item-image-delete:hover {
+    background-color: #FF3131;
+}
+
+
+
+.new-form-container {
+    width: 100%;
+    background-color: #202020;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 8px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.new-form { 
+    width: 100%;
+}
+
+.new-form input {
+    background-color: #404040;
+    border: none;
+    color: white;
+}
+
+.new-form input::placeholder {
+    color: rgb(157, 157, 157);
+}
+
+.new-form-label-input-container {
+    margin-bottom: 7px;
+}
+
+.new-form-label-input-container-double {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.new-form-label-input-container.double {
+    width: 100%;
+}
+
+.new-form-label p {
+    margin-bottom: 6px;
+    margin-left: 3px;
+}
+
+.new-form-text-area {
+    width: 100%;
+    min-height: 100px;
+    padding: 5px 8px;
+    border-radius: 6px;
+    resize: none;
+    background-color: #404040;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.new-form-text-area-error {
+    color: red;
+    margin-left: 3px;
+}
+
+.new-form-btn {
+    width: 100%;
+    background-color: rgb(12, 12, 12);
+    border: none;
+    color: white;
+    height: 33px;
+    border-radius: 5px;
+    cursor: pointer;
+    filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+}
+
+
+@media screen and (min-width: 640px) {
+    .new-file-field {
+        flex-direction: row;
+    }
+}

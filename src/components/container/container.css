@@ -1,0 +1,7 @@
+.container-component {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    padding: 0px 16px;
+    padding-bottom: 10px;
+}
