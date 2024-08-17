@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 import { CartContext } from '../../contexts/CartContext';
 import { Footer } from '../../components/footer';
 import toast from 'react-hot-toast';
+import { Loader } from '../../components/loader';
 
 export interface ProductProps {
     id: string;
@@ -30,6 +31,7 @@ export function Home() {
     const [products, setProducts] = useState<ProductProps[]>([]);
     const [loadImages, setLoadImages] = useState<string[]>([]);
     const [inputSearch, setInputSearch] = useState('');
+    const [loading, setLoading] = useState(true);
 
     const {loadingAuth, signed} = useContext(AuthContext);
     const {addItemCart} = useContext(CartContext);
@@ -63,10 +65,12 @@ export function Home() {
             })
 
             setProducts(listProducts);
+            setLoading(false);
         })
         .catch((err) => {
             console.error(err);
             console.log('[ERRO] Contact the Developer!');
+            setLoading(false);
         })
     }
 
@@ -114,6 +118,12 @@ export function Home() {
 
         toast.success('Added to cart :)');
         addItemCart(newItem);
+    }
+
+    if (loading) {
+        return (
+            <Loader />
+        )
     }
 
     return (
